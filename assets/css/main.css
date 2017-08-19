@@ -1,0 +1,18 @@
+.school-logos {
+  top: 100%;
+  bottom: 100%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+  .school-logos {
+    display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+  }
+}
