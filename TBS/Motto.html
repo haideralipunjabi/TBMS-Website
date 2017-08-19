@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyndale Biscoe & Mallinson Education Society</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body class="grey lighten-3">
+  
+      <div id="navbar">
+        
+      </div>
+   <br>
+  <div class="container">
+  <div id="header">
+    
+  </div>
+  
+  <div class="row flow-text">
+    <h2>School Motto & Crest</h2>
+    <blockquote>
+      
+      <b style="text-align:center;">"In All Things Be Men"</b>
+<p>
+   <img class="responsive-img right" src="/assets/media/logos/tbs.svg" alt="">We mean by a man, one who is both strong and kind hearted, humble and unselfish.
+The crest embodies this ideal of manhood. The paddles represent sturdy hard work and bodily strength and health. Their heart shaped blades indicate the gentleness that tempers brute strength. The lowly calling of the boatman reminds us to honour all useful work and to be ready to serve even in the humblest capacity. Finally, the paddles are laid across to remind us of Him, our perfect pattern of manhood, who spent His life in the service of others and died on the cross for all mankind.</p>
+
+
+    </blockquote>
+  </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="/assets/js/popper.min.js" charset="utf-8"></script>
+
+  <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
+  <script src="/assets/js/materialize.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#navbar").load("/TBS/navbar.html", function(){
+      $('.dropdown-button').dropdown();
+      $(".button-collapse").sideNav();
+
+    });
+    $("#header").load("/TBS/header.html", function(){
+      $('.slider').slider({
+        'height' : 400
+      });  
+    })
+     
+     $('.dropdown-button').dropdown();
+   });
+  </script>
+
+</body>
+
+</html>
