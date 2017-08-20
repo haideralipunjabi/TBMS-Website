@@ -1,9 +1,10 @@
 .school-logos {
-  top: 100%;
-  bottom: 100%;
+  
   text-align: center;
 }
-
+.school-logos .card {
+  height: 300px;
+} 
 @media only screen and (min-width: 600px){
   .school-logos {
     display: -webkit-box;
@@ -15,8 +16,21 @@ display: flex;
 -ms-flex-align: center;
 align-items: center;
   }
+  .school-logos .card {
+    height: 380px;
+  } 
 }
-
+@media (max-width: 465px){
+  .school-logos .card {
+    height: 250px;
+  }  
+}
 svg {
   display: block;
 }
+.school-logos .card-image > img {
+    padding: 20px 20px 20px 20px;
+    height: 100%;
+}
+
+.

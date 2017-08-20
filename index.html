@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tyndale Biscoe & Mallinson Education Society</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+  
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
@@ -15,9 +19,9 @@
   <div class="container">
         <img class="responsive-img  " src="https://www.tbmes.org/images/title.png" alt="">
     
-    <div class="row school-logos">
+    <div class="row row-eq-height school-logos align-items-start ">
       
-      <div class="col s6 m3 l3" id="TBS" onclick="location.href='/TBS'">
+      <div class="col-6 col-md-3" id="TBS" onclick="location.href='/TBS'">
         <div class="card hoverable red">
           <div class="card-image">
             <img src="/assets/media/logos/mgs.svg">
@@ -27,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="col s6 m3 l3" id="MGS" onclick="location.href='/MGS'">
+      <div class="col-6 col-md-3" id="MGS" onclick="location.href='/MGS'">
         <div class="card hoverable brown">
           <div class="card-image">
             <img src="/assets/media/logos/mgs.svg">
@@ -37,7 +41,7 @@
           </div>
         </div>
       </div>
-      <div class="col l3 m3 s6" id="KVS" onclick="location.href='/KVS'">
+      <div class="col-6 col-md-3" id="KVS" onclick="location.href='/KVS'">
         <div class="card hoverable cyan">
           <div class="card-image">
             <img src="/assets/media/logos/mgs.svg">
@@ -47,7 +51,7 @@
           </div>
         </div>
       </div>
-      <div class="col l3 m3 s6" id="TNG" onclick="location.href='/TNG'">
+      <div class="col-6 col-md-3" id="TNG" onclick="location.href='/TNG'">
         <div class="card hoverable orange">
           <div class="card-image">
             <img src="/assets/media/logos/mgs.svg">
@@ -63,7 +67,13 @@
   <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
   <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
   <script src="/assets/js/materialize.min.js" charset="utf-8"></script>
+<script src="/assets/js/jquery.matchHeight-min.js" charset="utf-8"></script>
+<script type="text/javascript">
 
+$(document).ready(function(){
+ $('.row-eq-height').matchHeight();
+});
+</script>
 </body>
 
 </html>
