@@ -19,12 +19,16 @@ align-items: center;
   .school-logos .card {
     height: 380px;
   } 
+  .brand-logo img {
+    margin-left: 20px;
+  }
 }
 @media (max-width: 465px){
   .school-logos .card {
     height: 250px;
   }  
 }
+
 svg {
   display: block;
 }
@@ -33,4 +37,14 @@ svg {
     height: 100%;
 }
 
-.
+.brand-logo img {
+  height: 64px;
+  
+}
+
+.tabs.noindicator a {
+  color: #fff !important;
+}
+.tabs.noindicator .indicator {
+  display: none;
+}
