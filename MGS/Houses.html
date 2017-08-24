@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyndale Biscoe & Mallinson Education Society</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style media="screen">
+    #houses p {
+
+      text-align: justify;
+    }
+
+    #houses img {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body class="grey lighten-3">
+
+  <div id="navbar">
+
+  </div>
+  <br>
+  <div class="container">
+    <div id="header">
+
+    </div>
+    <div id="houses" class="row flow-text">
+      <h2>Houses</h2>
+      <p>
+        The School is divided into four houses after the names of the various distingushing Women Personalities. Each girl is placed in one of the four houses. Each house is recognized by its totem which is a <strong>'FLOWER’</strong> and each house has
+        been assigned a <strong>‘Colour’</strong> which differentiates one from the other.<br> The House System is devised to promote the qualities of leadership, responsibility, team spirit and positive self esteem in girls.<br> Healthy inter house Competitions
+        in various activities are held .The House System also provides an excellent way of meeting girls outsides one's class and age group, all of whom have a common goal and purpose.<br> Each house is headed by a House Mistress. House Meetings are held
+        at fortnightly intervals to discuss and plan the house related work.
+      </p>
+      <p>
+        <img class="responsive-img right" src="https://www.tbmes.org/MGS/images/croc.jpg" alt="">
+        <span style="color:#339933; font-weight:bolder;">Florence Nightangle</span><br> The Florence Nightingale House is named after the name of the celebrated social reformer and the founder of modern nursing, <strong>Florence Nightingale </strong>.
+        She came to prominence while serving as a nurse during the Crimean War, where she attended to wounded soldiers. She was dubbed "The Lady with the Lamp" after her habit of making rounds at night.<br>
+        <span style="color:#99ccff; font-weight:bolder">  Sky Blue </span>color has been assigned to this house.<br> The Florence Nightingale house is recognized by its totem, <strong> Crocus (Kongposh) </strong>. The stamen of this flower is widely known
+        as ‘Kesar’.
+      </p>
+      <p>
+        <img class="responsive-img left" src="https://www.tbmes.org/MGS/images/cl.jpg" alt="">
+        <span style="color:green; font-weight:bolder">Helen Keller</span><br> The Helen Keller House is named after the name of an American author, political activist, and lecturer, <strong>Helen Adams Keller.  </strong> She was the first deaf / blind
+        person to earn a Bachelor of Arts Degree. She was the lady who inspired changes in public attitude about the capabilities of people with visual impairments. <br>
+        <span style="color:#006400; font-weight:bolder">  Olive Green </span>color has been assigned to this house.<br> The Helen Keller house is recognized by its totem, <strong> Crown Lilly </strong>, which is perennial that blooms from the bulb during
+        the spring (the first flower after winter season).
+      </p>
+      <p>
+        <img class="responsive-img right" src="https://www.tbmes.org/MGS/images/daffodil.jpg" alt="">
+
+        <span style="color:#339933; font-weight:bolder;">Sarojini Naidu</span><br> The Sarojini Naidu House is named after the name of Indian Independence activist and poet <strong>Sarojini Naidu. </strong>She is also known by the sobriquet "The Nightingale
+        of India" She was one of the framers of the Indian Constitution. Her birthday is celebrated as Women's Day all over India. <br>
+        <span style="color:#ffcc66; font-weight:bolder">  Pale Yellow </span>color has been assigned to this house.<br> The Sarojini naidu house is recognized by its totem, <strong> Daffodil </strong>which is an attractive trumpet-shaped perennial flower
+        that blooms from bulb during the spring in Kashmir.
+
+
+      </p>
+      <p>
+        <img class="responsive-img left" src="https://www.tbmes.org/MGS/images/lotus.jpg" alt="">
+        <span style="color:#339933;font-weight:bolder;">Pandita Rama Bhai</span><br> The Pandita Rama Bhai House is named after the name of the Indian poet and the scholar,<strong> Pandita Rama Bhai</strong>. She was a social reformer who dedicated her
+        life for the upliftment of women.<br>
+        <span style="color:#faafbb; font-weight:bolder">Light Pink </span>color has been assigned to this house.<br> The Pandita Rama Bhai house is recognized by its totem, <strong> Lotus </strong>which is a beautiful flower that grows in lakes and ponds
+        in the areas where the water remains fairly still on the surface.It is found in abundance in Kashmir.</p>
+    </div>
+
+  </div>
+  <!--SCRIPTS-->
+  <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="/assets/js/popper.min.js" charset="utf-8"></script>
+
+  <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
+  <script src="/assets/js/materialize.js" charset="utf-8"></script><script src="/assets/js/jsonQ.min.js"></script><script src="/assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#navbar").load("/MGS/navbar.html", function() {
+        $('.dropdown-button').dropdown();
+        $(".button-collapse").sideNav();
+
+      });
+      $("#header").load("/MGS/header.html", function() {
+        $('.slider').slider({
+          'height': 400
+        });
+      })
+
+      $('.dropdown-button').dropdown();
+    });
+  </script>
+
+</body>
+
+</html>

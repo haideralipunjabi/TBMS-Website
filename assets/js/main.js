@@ -15,3 +15,11 @@ function loadjscssfile(filename, filetype){
     if (typeof fileref!="undefined")
         document.getElementsByTagName("head")[0].appendChild(fileref)
 }
+
+function get_news_updates(path, school_name, callback_function){
+	
+	$.getJSON(path, function(data){
+		callback_function(data[school_name]);
+	});
+
+}
