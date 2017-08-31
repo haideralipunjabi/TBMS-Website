@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyndale Biscoe & Mallinson Education Society</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style media="screen">
+    table td i{
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body class="grey lighten-3">
+
+  <div id="navbar">
+
+  </div>
+  <br>
+  <div class="container">
+    <div id="header">
+
+    </div>
+    <div class="row flow-text">
+      <h2>Syllabi</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/July August - Planner Nursery 2017.pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class Nursery</a></td>
+            <td><a target="_blank" href="syllabiiTNG/July August - Planner KG  2017.pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class K.G</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/July August - Planner Ist  2017.pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 1st</a></td>
+            <td><a target="_blank" href="syllabiiTNG/July August - Planner II  2017.pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 2nd</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/Class-III --  U-III Syllabus &amp; T-II Additionals (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 3rd</a></td>
+            <td><a target="_blank" href="syllabiiTNG/Class-IV -- U-III Syllabus &amp; T-II Additionals (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 4th</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/Revised Class-V -- U-III Syllabus and T-II Additionals (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 5th</a></td>
+            <td><a target="_blank" href="syllabiiTNG/Class-VI --  Unit-III Syllabus &amp; T-II Additionals (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 6th</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/Class-VII -- Unit-III - Syllabus &amp; T-II Additionals (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 7th</a></td>
+            <td><a target="_blank" href="syllabiiTNG/Class-VIII -- Unit-III Syllabus &amp; T-II Additionals (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 8th</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/Class-IX -- U-III Syllabus (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 9th</a></td>
+            <td><a target="_blank" href="syllabiiTNG/Class-X --  Revised U-I - U-II &amp; T-I  Syllabus (2016-17).pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 10th</a></td>
+          </tr>
+          <tr>
+            <td><a target="_blank" runat="server" href="syllabiiTNG/Class 11th - Revised T-I Includes U-I Syllabus - 2016-17.pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 11th</a></td>
+            <td><a target="_blank" href="syllabiiTNG/Revised T-1 Syllabus class 12.pdf?636389055841265000"><i class="material-icons">picture_as_pdf</i>Class 12th</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="/assets/js/popper.min.js" charset="utf-8"></script>
+
+  <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
+  <script src="/assets/js/materialize.js" charset="utf-8"></script><script src="/assets/js/jsonQ.min.js"></script><script src="/assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#navbar").load("/TNG/navbar.html", function() {
+        $('.dropdown-button').dropdown();
+        $(".button-collapse").sideNav();
+
+      });
+      $("#header").load("/TNG/header.html", function() {
+        $('.slider').slider({
+          'height': 400
+        });
+      })
+
+      $('.dropdown-button').dropdown();
+    });
+  </script>
+
+</body>
+
+</html>
