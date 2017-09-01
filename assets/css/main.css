@@ -60,3 +60,7 @@ blockquote.green-border {
 blockquote.blue-border {
   border-left: 5px solid #1565c0 !important;
 }
+
+#TBS, #MGS, #KVS, #TNG {
+ cursor: pointer; 
+}
