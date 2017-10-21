@@ -3,30 +3,31 @@
 
 <div class="slider col s12 m12 l6">
 <ul class="slides">
-<li>
-  <img src="https://www.tbmes.org/TBS/images/SliderImages/384d14ac-cb86-4af5-98a7-2355ae3f9dd8.jpg"> <!-- random image -->
-</li>
+  
+  <li><img src="https://tbmes.org/TBS/images/SliderImages/e4c0dd4b-8776-4424-a21d-2ffc76c80a21.jpg"></li>
 
-<li><img src="https://www.tbmes.org/TBS/images/SliderImages/437a5236-88e4-40c6-8e98-9da7e3f5a184.jpg">
-</li>
-<li><img src="https://www.tbmes.org/TBS/images/SliderImages/bc44c1a0-c61e-47be-b5c4-265759352e57.JPG">
-</li>
-<li><img src="https://www.tbmes.org/TBS/images/SliderImages/119cb998-4e4b-447a-9d51-01984a832721.JPG">
-</li>
-<li><img src="https://www.tbmes.org/TBS/images/SliderImages/bc44c1a0-c61e-47be-b5c4-265759352e57.JPG">
-</li>
+  <li><img src="https://tbmes.org/TBS/images/SliderImages/10c27ec7-6b30-4600-9aa0-e0f85f56a1f9.jpg"></li>
+
+  <li><img src="https://tbmes.org/TBS/images/SliderImages/270db2de-9b80-4de6-9bb4-8cf51ffacb59.jpg"></li>
+
+  
+
 </ul>
 </div>
 <div class="col s12 m12 l6">
 <h3 class="flow-text" style="text-align: center;">News & Updates</h3>
-<div class="row">
-<div class="card-panel large">
-  <span>DEMO TEXT</span>
-</div>
-<div class="card-panel large">
-  <span>DEMO TEXT</span>
-</div>
+<div class="row" id="news_updates">
+
 </div>
 
 </div>
 </div>
+<script type="text/javascript">
+  get_news_updates("/assets/data/news_updates.json", "TBS", function(data){
+    json = data;
+    $.each(json, function(index, val) {
+      code = '<a href="'+val.link+'"><div class="card-panel large"><span>'+val.text+'</span></div></a>'
+      $("#news_updates").append($(code));
+    });
+  });
+</script>

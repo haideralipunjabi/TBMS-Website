@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyndale Biscoe & Mallinson Education Society</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body class="grey lighten-3">
+  
+      <div id="navbar">
+        
+      </div>
+   <br>
+  <div class="container">
+  <div id="header">
+    
+  </div>
+  
+  <div class="row flow-text">
+    <img class="responsive-img right" style="margin-top: auto; margin-bottom: auto;" src="/assets/media/logos/mgs.svg" alt=""></img>
+
+    <h2>School Motto & Crest</h2>
+    <blockquote class="brown-border">
+      <b style="text-align:center;">"Faithful in the Least"</b>
+<p style="text-align: justify;">
+   By our School motto " Faithful in the Least " we mean a woman who is faithful, honest, modest, generous, kind-hearted, affectionate, humble, selfless but strong and courageous in little ways that make up their span of life, for they have to prepare themselves not only for examinations but the true test of life.
+The crest embodies the message of enlightenment through literacy and moral character building. </p>
+
+
+    </blockquote>
+  </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="/assets/js/popper.min.js" charset="utf-8"></script>
+
+  <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
+  <script src="/assets/js/materialize.js" charset="utf-8"></script><script src="/assets/js/jsonQ.min.js"></script><script src="/assets/js/main.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#navbar").load("/MGS/navbar.html", function(){
+      $('.dropdown-button').dropdown();
+      $(".button-collapse").sideNav();
+
+    });
+    $("#header").load("/MGS/header.html", function(){
+      $('.slider').slider({
+        'height' : 400
+      });  
+    })
+     
+     $('.dropdown-button').dropdown();
+   });
+  </script>
+
+</body>
+
+</html>

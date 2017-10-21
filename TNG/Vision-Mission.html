@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyndale Biscoe & Mallinson Education Society</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="/assets/css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body class="grey lighten-3">
+  
+      <div id="navbar">
+        
+      </div>
+   <br>
+  <div class="container">
+    <div id="header">
+      
+    </div>
+    <div class="row flow-text">
+      <h2>Vision & Mission</h2>
+      <blockquote class="green-border">
+      <b>VISION</b>
+<p>
+  The founders of the Tyndale-Biscoe and Mallinson Schools, Srinagar, Kashmir, set their vision on all round strengthening of the social and moral fiber of the people of Kashmir, through Education and Healthcare among children, drawing from the Biblical ethos of love and compassion for one’s environment.
+
+</p>
+
+
+<b>MISSION</b>
+
+<p>
+  To fulfill the above mentioned vision, the Tyndale-Biscoe and Mallinson Society adopted a holistic developmental approach to education keeping social responsibility as its hallmark . Every student is given ample opportunity to experience camaraderie while participating in activities that help the child learn to be independent and yet co-operative in actions and be strong yet kind and just.
+
+</p>      </blockquote>
+    </div>
+  </div>
+  <!--SCRIPTS-->
+  <script src="/assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="/assets/js/popper.min.js" charset="utf-8"></script>
+
+  <script src="/assets/js/bootstrap.js" charset="utf-8"></script>
+
+  <script src="/assets/js/materialize.js" charset="utf-8"></script><script src="/assets/js/jsonQ.min.js"></script><script src="/assets/js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#navbar").load("/TNG/navbar.html", function(){
+    $('.dropdown-button').dropdown();
+    $(".button-collapse").sideNav();
+
+  });
+  $("#header").load("/TNG/header.html", function(){
+    $('.slider').slider({
+      'height' : 400
+    });  
+  })
+   
+   $('.dropdown-button').dropdown();
+  
+ });
+</script>
+</body>
+
+</html>
